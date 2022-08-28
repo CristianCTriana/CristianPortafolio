@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.NameTittle{
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    width: 75px;
+    position: absolute;
+    letter-spacing: 2px;
+    padding: 1rem;
+    line-height: 1.25rem;
+    color: #61dafb;
+}
+
+.Navbar {
+    background: linear-gradient(180deg, #f9f9f927 0%, #292929 30%, #111111 100%);
+    background-color: #111111;
+    color: #f9f9f9;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 80px;
+    z-index: 100;
+}
+
+.NavbarList{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.NavbarListItem{
+    display: inline-block;
+    list-style: none;
+}
+
+.MenuOptionContainer{
+    display: inline-flex;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.MenuOptionContainer:hover{
+    border-bottom: #61dafb solid 5px;
+}
+
+.MenuOption{
+    color: #f9f9f9;
+    text-decoration: none;
+    margin: auto;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 25px;
+    height: 30px;
+}
+
+.MenuOption:hover{
+    color: #61dafb;
+    font-family: 'Kanit', sans-serif;
+}

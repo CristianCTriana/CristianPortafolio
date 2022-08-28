@@ -1,0 +1,69 @@
+.AcercaDeMi{
+    font-family: 'Kanit', sans-serif;
+}
+
+.AcercaDeMiContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.NombreYDescripcion{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 1rem;
+}
+
+.FotoYRedes{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.AcercaDeMiNombre{
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.AcercaDeMiDescripcion{
+    flex: 3;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.AcercaDeMiFoto{
+    padding: 1rem;
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+.photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 99999px;
+    border: 10px solid #61dafb;
+}
+
+.AcercaDeMiRedes{
+    padding: 1rem;
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+}
+
+.AcercaDeMiRedes{
+    text-decoration: none;
+    color: black;
+}
