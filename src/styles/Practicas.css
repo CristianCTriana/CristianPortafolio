@@ -1,3 +1,195 @@
-.Practicas{
-    height: 500px;
+.Practicas {
+    margin: 20px 0px;
+    /* background-color: rgb(211, 211, 211); */
+    min-height: 20rem;
+    text-align: center;
+}
+
+.PracticasTittle {
+    color: #00a2cf;
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.SlidesContainerP {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.SlideP {
+    display: none;
+}
+
+.ImagesContainerP {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-left: 50px;
+}
+
+.TextContainerP {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex: 3;
+    margin-right: 50px;
+}
+
+.TittleP {
+    text-decoration: underline #00a2cf 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+
+.SlideImgP {
+    margin: 5px;
+    max-width: 400px;
+    max-height: 250px;
+    border: 5px solid #00a2cf;
+}
+
+.PrevP,
+.NextP {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.PrevP {
+    left: 0;
+}
+
+.NextP {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.PrevP:hover,
+.NextP:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.TextP {
+    margin-top: 20px;
+    font-family: 'Kanit', sans-serif;
+    text-align: justify;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+/* .Text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+} */
+
+.DotContainerP {
+    text-align: center;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+}
+
+.DotP {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.DotP:hover {
+    background-color: #717171;
+}
+
+.Fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes Fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .PrevP,
+    .NextP,
+    .TextP {
+        font-size: 11px
+    }
+}
+
+.TecnologiesP {
+    padding-top: 20px;
+    align-items: flex-start;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.IconP {
+    font-size: 25px;
+    color: #00a2cf
+}
+
+.ButtonsP {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.ButtonCodeP {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 10px 8px 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.ButtonCodeP:hover {
+    background-color: #00a2cf;
+    box-shadow: 0px 15px 20px rgba(102, 232, 255, 0.479);
+    color: #fff;
 }
