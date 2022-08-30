@@ -51,7 +51,9 @@
     margin: 5px;
     max-width: 350px;
     max-height: 200px;
-    border: 5px solid #00a2cf;
+    border: 7px solid #00a2cf;
+    border-left: none;
+    border-top: none;
 }
 
 .Prev, .Next {

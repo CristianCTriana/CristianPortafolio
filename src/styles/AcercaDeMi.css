@@ -49,7 +49,8 @@
     width: 250px;
     height: 250px;
     border-radius: 99999px;
-    border: 10px solid #61dafb;
+    border-right: 10px solid #61dafb;
+    border-bottom: 10px solid #61dafb;
 }
 
 .AcercaDeMiRedes{
