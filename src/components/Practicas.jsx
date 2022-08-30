@@ -30,7 +30,6 @@ let slideIndex = 1;
 
   let plusSlides = (n)=>{
     showSildes( slideIndex += n);
-    console.log("click")
   }
 
   let currentSlide = (n) => {

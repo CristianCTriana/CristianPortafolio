@@ -34,7 +34,6 @@ function Proyectos() {
 
   let plusSlides = (n)=>{
     showSildes( slideIndex += n);
-    console.log("click")
   }
 
   let currentSlide = (n) => {

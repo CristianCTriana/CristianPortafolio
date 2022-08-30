@@ -42,7 +42,7 @@
 }
 
 .Tittle{
-    text-decoration: underline #00a2cf 5px;
+    text-decoration: overline #00a2cf 5px;
     font-family: 'Kanit', sans-serif;
     font-size: 20px;
 }
@@ -157,7 +157,8 @@
 
 .Icon{
     font-size: 25px;
-    color:#00a2cf
+    color:#00a2cf;
+    margin: 5px;
 }
 
 .Buttons{
