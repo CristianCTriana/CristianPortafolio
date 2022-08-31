@@ -1,9 +1,10 @@
 import '../styles/Practicas.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { FaCss3, FaEye, FaHashtag, FaHtml5, FaReact } from "react-icons/fa";
 import { SiJavascript, SiRedux } from "react-icons/si";
 import ReactTooltip from 'react-tooltip';
 import copyWriteChallenge from '../Imgs/copyWriteChallenge.png';
+import Modal from 'react-modal';
 
 function Practicas() {
 let slideIndex = 1;
@@ -36,6 +37,20 @@ let slideIndex = 1;
     showSildes(slideIndex = n)
   }
 
+  const [showImgModal, setShowImgModal] = useState(false);
+  const [imgModal, setImgModal] = useState('');
+
+  const eventModal = (event) => {
+    // console.log(event.target.src);
+    if(event)setImgModal(event.target.src);
+    // setShowImgModal(true);
+    if(showImgModal){
+      setShowImgModal(false)
+    }else{
+      setShowImgModal(true)
+    }
+  }
+
   return (
     <div className='Practicas' id='Practicas'>
 
@@ -47,11 +62,11 @@ let slideIndex = 1;
 
         <div className='SlideP Fade'>
           <div className='ImagesContainerP'>
-            <img src={copyWriteChallenge} className='SlideImgP'></img>
+            <img onClick={(event) => {eventModal(event)}} src={copyWriteChallenge} className='SlideImgP'></img>
           </div>
           <div className='TextContainerP'>
             <div className='TittleP'><span><strong>Palabras Palíndromas</strong></span></div>
-            <div className='TextP'>App que te muestra una palabra ingresa por el usuario escrita al revés y te muestra si es o no palíndroma.</div>
+            <div className='TextP'>App que te muestra una palabra ingresada por el usuario escrita al revés y te muestra si es o no palíndroma.</div>
             <div className='TecnologiesP'>
               <FaReact data-tip="ReactJs" className='IconP'/>
               <SiRedux data-tip="Redux" className='IconP'/>
@@ -78,6 +93,20 @@ let slideIndex = 1;
         <span className='DotP' onClick={() => currentSlide(1)}></span>
         {/* <span className='DotP' onClick={() => currentSlide(2)}></span> */}
       </div>
+
+      <Modal
+          onRequestClose={()=>{setShowImgModal(false)}}
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          isOpen={showImgModal} style={{
+          overlay: {}, 
+          content: {
+          width: "80%",
+          height: "500px",
+          margin: "80px 7%"
+          }}}>
+        <img id='prueba' style={{width: "100%",height: "98%",border: "7px solid #00a2cf", padding: ".5rem"}} src={imgModal}/>
+      </Modal>
     </div>
   );
 }

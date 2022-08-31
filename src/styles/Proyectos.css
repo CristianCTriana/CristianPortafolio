@@ -61,6 +61,7 @@
     border: 7px solid #00a2cf;
     border-left: none;
     border-top: none;
+    cursor: pointer;
 }
 
 .Prev, .Next {

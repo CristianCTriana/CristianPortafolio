@@ -59,6 +59,7 @@
     border: 5px solid #00a2cf;
     border-top: none;
     border-left: none;
+    cursor: pointer;
 }
 
 .PrevP,

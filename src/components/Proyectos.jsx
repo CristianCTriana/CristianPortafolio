@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBootstrap, FaCss3, FaEye, FaHashtag, FaHtml5, FaReact } from "react-icons/fa";
 import { SiAuth0, SiJavascript, SiPostgresql, SiRedux, SiSequelize } from "react-icons/si";
 import ReactTooltip from 'react-tooltip';
@@ -7,6 +7,7 @@ import HomePiVideogames from '../Imgs/HomePIvideogames.png';
 import LandingPiVideogames from '../Imgs/landingPIvideogames.png';
 import menuEcommercell from '../Imgs/menuEcommercell.png';
 import panelAdminEcommercell from '../Imgs/panelAdminEcommercell.png';
+import Modal from 'react-modal';
 
 function Proyectos() {
 
@@ -40,6 +41,20 @@ function Proyectos() {
     showSildes(slideIndex = n)
   }
 
+  const [showImgModal, setShowImgModal] = useState(false);
+  const [imgModal, setImgModal] = useState('');
+
+  const eventModal = (event) => {
+    // console.log(event.target.src);
+    if(event)setImgModal(event.target.src);
+    // setShowImgModal(true);
+    if(showImgModal){
+      setShowImgModal(false)
+    }else{
+      setShowImgModal(true)
+    }
+  }
+
   return (
     <div className='Proyectos' id='Proyectos'>
 
@@ -49,8 +64,8 @@ function Proyectos() {
 
         <div className='Slide Fade'>
           <div className='ImagesContainer'>
-            <img src={HomePiVideogames} className='SlideImg'></img>
-            <img src={LandingPiVideogames} className='SlideImg'></img>
+            <img onClick={(event) => {eventModal(event)}} src={HomePiVideogames} className='SlideImg'></img>
+            <img onClick={(event) => {eventModal(event)}} src={LandingPiVideogames} className='SlideImg'></img>
           </div>
           <div className='TextContainer'>
             <div className='Tittle'><span><strong>Proyecto Individual</strong></span></div>
@@ -76,8 +91,8 @@ function Proyectos() {
 
         <div className='Slide Fade'>
           <div className='ImagesContainer'>
-            <img src={menuEcommercell} className='SlideImg'></img>
-            <img src={panelAdminEcommercell} className='SlideImg'></img>
+            <img onClick={(event) => {eventModal(event)}} src={menuEcommercell} className='SlideImg'></img>
+            <img onClick={(event) => {eventModal(event)}} src={panelAdminEcommercell} className='SlideImg'></img>
           </div>
           <div className='TextContainer'>
             <div className='Tittle'><span><strong>E-COMMERCEL</strong></span></div>
@@ -112,6 +127,21 @@ function Proyectos() {
         <span className='Dot' onClick={() => currentSlide(1)}></span>
         <span className='Dot' onClick={() => currentSlide(2)}></span>
       </div>
+
+      {/* <Modal isOpen={true} style={modalStyles}> */}
+      <Modal
+          onRequestClose={()=>{setShowImgModal(false)}}
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          isOpen={showImgModal} style={{
+          overlay: {}, 
+          content: {
+          width: "80%",
+          height: "500px",
+          margin: "80px 7%"
+          }}}>
+        <img id='prueba' style={{width: "100%",height: "98%",border: "7px solid #00a2cf", padding: ".5rem"}} src={imgModal}/>
+      </Modal>
     </div>
   );
 }

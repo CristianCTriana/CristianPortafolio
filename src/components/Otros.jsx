@@ -36,7 +36,7 @@ function Otros() {
           </div>
           <div className='OtrosInfoText'>
             <p>Unity es un motor de videojuego multiplataforma creado por Unity Technologies.</p>
-            <p>Durante mi proceso en la universidad estuve en 2 semilleros donde aprendí a usar unity.</p>
+            <p>Durante mi proceso en la universidad estuve en 2 semilleros donde aprendí a usar Unity.</p>
           </div>
         </div>
       </div>

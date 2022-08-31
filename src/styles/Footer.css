@@ -26,9 +26,10 @@
     text-align: center;
     align-items: center;
     margin-top: 18px;
+    margin-right: 10rem;
 }
 
 .info{
-    margin-bottom: 5px;
-    
+    position: absolute;
+    margin-top: 4px;
 }
