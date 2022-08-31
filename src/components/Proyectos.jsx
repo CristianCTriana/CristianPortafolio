@@ -134,7 +134,9 @@ function Proyectos() {
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
           isOpen={showImgModal} style={{
-          overlay: {}, 
+          overlay: {
+            
+          }, 
           content: {
           width: "80%",
           height: "500px",

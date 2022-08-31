@@ -61,3 +61,24 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
 }
+
+
+@media screen and (max-width: 850px) {
+
+    .InfoContainer{
+        flex-direction: column;
+    }
+
+    .Info1{
+        /* margin-bottom: 50PX; */
+        width: 89%;
+        margin: 25px 5%
+        /* margin-left: 0px; */
+    }
+
+    .Info2{
+        width: 89%;
+        margin: 25px 5%
+        /* margin-left: 0px; */
+    }
+}

@@ -59,3 +59,41 @@
     color: #61dafb;
     font-family: 'Kanit', sans-serif;
 }
+
+.ButtonNavbar {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .NavbarList {
+        display: none;
+    }
+
+    .NavbarListMobile{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        margin-left: calc(100% - 180px);
+        margin-top: 80px;
+        /* background-color: #111111; */
+        background: linear-gradient(0deg, #f9f9f927 0%, #292929 3%, #111111 100%);
+    }
+
+    .NavbarListItem{
+        width: 100%;
+        margin-right: 25px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #fff;
+    }
+
+    .ButtonNavbar{
+        margin-top: 15px;
+        height: 50px;
+        width: 50px;
+        display: block;
+        margin-left: calc(100% - 70px);
+        background-color: #383838;
+        border: none;
+        border-radius: 40%;
+    }
+}

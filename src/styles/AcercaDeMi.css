@@ -72,3 +72,9 @@ h1{
     text-decoration: none;
     color: black;
 }
+
+@media screen and (max-width: 850px) {
+    .AcercaDeMiContainer{
+        flex-direction: column-reverse;
+    }
+}

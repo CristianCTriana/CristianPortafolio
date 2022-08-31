@@ -19,7 +19,7 @@
 }
 
 .SlidesContainer {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
     padding-top: 15px;
@@ -39,7 +39,6 @@
 .TextContainer{
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     flex: 3;
     margin-right: 50px;
@@ -49,7 +48,6 @@
 
 .Tittle{
     text-decoration: overline #00a2cf 5px;
-    font-family: 'Kanit', sans-serif;
     font-size: 1.3rem;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -198,4 +196,53 @@
     background-color: #00a2cf;
     box-shadow: 0px 15px 20px rgba(102, 232, 255, 0.479);
     color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+
+    .Slide{
+        flex-direction: column;
+    }
+
+    .SlideImg{
+        flex: 1;
+        margin-left: 5%;
+    }
+
+    .TextContainer{
+        margin-right: 0px;
+    }
+
+    .Tittle{
+        margin-top: 30px;
+    }
+
+    .Text{
+        width: 100%;
+        max-width: 100%;
+        min-width: none;
+        padding: 0px 10%;
+    }
+
+    .ImagesContainer{
+        margin-left: 0px;
+        flex-direction: row;
+    }
+
+    .DotContainer{
+        padding-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .Slide {
+        flex-direction: column;
+    }
+
+    .ImagesContainer {
+        margin-left: 0px;
+        flex-direction: column;
+    }
 }

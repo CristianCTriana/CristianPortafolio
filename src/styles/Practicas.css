@@ -204,3 +204,55 @@
     box-shadow: 0px 15px 20px rgba(102, 232, 255, 0.479);
     color: #fff;
 }
+
+@media screen and (max-width: 850px) {
+
+    .SlideP {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SlideImgP {
+        flex: 1;
+        margin-left: 5%;
+    }
+
+    .TextContainerP {
+        margin-right: 0px;
+    }
+
+    .TittleP {
+        margin-top: 30px;
+    }
+
+    .TextP {
+        width: 100%;
+        max-width: 100%;
+        min-width: none;
+        padding: 0px 10%;
+    }
+
+    .ImagesContainerP {
+        margin-left: 0px;
+        flex-direction: row;
+    }
+
+    .DotContainerP{
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .SlideP {
+        flex-direction: column;
+    }
+
+    .ImagesContainerP {
+        margin-left: 0px;
+        flex-direction: column;
+        max-width: 98%;
+    }
+}
