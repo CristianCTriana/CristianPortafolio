@@ -1,3 +1,63 @@
 .Otros{
-    height: 500px;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+.OtrosTittle{
+    flex: 1;
+    color: #00a2cf;
+    font-size: 40px;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    font-family: 'Righteous';
+    text-transform: uppercase;
+}
+
+/* .OtrosText{
+    flex: 1;
+    margin-top: 20px;
+    font-family: 'Kanit', sans-serif;
+} */
+
+.InfoContainer{
+    flex: 2;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.Info1{
+    flex: 1;
+    border: 5px solid #00a2cf;
+    border-left: none;
+    border-top: none;
+    margin-left: 11%;
+    margin-right: 5.5%;
+    padding: 25px 30px;
+}
+
+.Info2{
+    flex: 1;    
+    border: 5px solid #00a2cf;
+    border-left: none;
+    border-top: none;
+    margin-right: 11%;
+    margin-left: 5.5%;
+    padding: 25px 30px;
+}
+
+.OtrosInfoTittle{
+    font-size: 3rem;
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.OtrosInfoText{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
 }

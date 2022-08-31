@@ -41,7 +41,7 @@ let slideIndex = 1;
 
       <h2 className='PracticasTittle'>Prácticas</h2>
 
-      <div><span className='TextP'>Aqui hay pequeños proyectos que uso para practicar.</span></div>
+      <div><span className='TextP'>Aquí hay pequeños proyectos que uso para practicar.</span></div>
 
       <div className='SlidesContainerP'>
 

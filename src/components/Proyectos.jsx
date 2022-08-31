@@ -81,7 +81,7 @@ function Proyectos() {
           </div>
           <div className='TextContainer'>
             <div className='Tittle'><span><strong>E-COMMERCEL</strong></span></div>
-            <div className='Text'>Es una pagina creada para la venta de productos tecnológicos y sus diversos accesorios, es mi proyecto final para el Bootcamp realizado en Henry, con ayuda de 4 integrantes más.</div>
+            <div className='Text'>Es una página creada para la venta de productos tecnológicos y sus diversos accesorios, es mi proyecto final para el Bootcamp realizado en Henry, con ayuda de 4 integrantes más.</div>
             <div className='Tecnologies'>
               <FaReact data-tip="ReactJs" className='Icon'/>
               <SiRedux data-tip="Redux" className='Icon'/>

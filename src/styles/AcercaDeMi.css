@@ -1,5 +1,6 @@
 .AcercaDeMi{
-    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Kanit', sans-serif; */
+    padding: 0 .5rem;
 }
 
 .AcercaDeMiContainer{
@@ -28,14 +29,17 @@
     margin: 1rem;
     font-size: 1.5rem;
     text-align: center;
+    font-family: 'Righteous';
+    text-transform: uppercase;
 }
 
 .AcercaDeMiDescripcion{
     flex: 3;
     padding: 1rem;
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: left;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .AcercaDeMiFoto{
