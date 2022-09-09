@@ -111,8 +111,7 @@ function Proyectos() {
             </div>
             <div className='Buttons'>
               <a className='ButtonCode' href='https://github.com/CristianaCTriana/PI-VIDEOGAMES' target="_blank" rel="noopener noreferrer"><FaHashtag style={{marginRight: '8px'}}/>Código</a>
-              <a className='ButtonCode' data-tip="No disponible"><FaEye style={{marginRight: '8px'}}/>Ver</a>
-              <ReactTooltip effect='solid' />
+              <a className='ButtonCode' href='https://proyecto-final-phi-steel.vercel.app'><FaEye style={{marginRight: '8px'}}/>Ver</a>
             </div>
           </div>
         </div>
