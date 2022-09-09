@@ -83,7 +83,7 @@ function Proyectos() {
             </div>
             <div className='Buttons'>
               <a className='ButtonCode' href='https://github.com/CristianaCTriana/PI-VIDEOGAMES' target="_blank" rel="noopener noreferrer"><FaHashtag style={{marginRight: '8px'}}/>Código</a>
-              <a className='ButtonCode' href='https://pi-videogames-pink.vercel.app'><FaEye style={{marginRight: '8px'}}/>Ver</a>
+              <a className='ButtonCode' href='https://pi-videogames-pink.vercel.app' target="_blank" rel="noopener noreferrer"><FaEye style={{marginRight: '8px'}}/>Ver</a>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ function Proyectos() {
             </div>
             <div className='Buttons'>
               <a className='ButtonCode' href='https://github.com/CristianaCTriana/PI-VIDEOGAMES' target="_blank" rel="noopener noreferrer"><FaHashtag style={{marginRight: '8px'}}/>Código</a>
-              <a className='ButtonCode' href='https://proyecto-final-phi-steel.vercel.app'><FaEye style={{marginRight: '8px'}}/>Ver</a>
+              <a className='ButtonCode' href='https://proyecto-final-phi-steel.vercel.app' target="_blank" rel="noopener noreferrer"><FaEye style={{marginRight: '8px'}}/>Ver</a>
             </div>
           </div>
         </div>
