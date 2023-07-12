@@ -1,105 +1,105 @@
 .Practicas {
-    margin: 20px 0px;
-    /* background-color: rgb(211, 211, 211); */
-    min-height: 20rem;
-    text-align: center;
-    padding: 0 .5rem;
+  margin: 20px 0px;
+  background-color: rgb(211, 211, 211);
+  min-height: 20rem;
+  text-align: center;
+  padding: 0 0.5rem;
 }
 
 .PracticasTittle {
-    color: #00a2cf;
-    font-size: 40px;
-    font-family: 'Righteous';
-    text-transform: uppercase;
+  color: #00a2cf;
+  font-size: 40px;
+  font-family: "Righteous";
+  text-transform: uppercase;
 }
 
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .SlidesContainerP {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    padding-top: 15px;
-    margin-top: 20px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 15px;
+  margin-top: 20px;
 }
 
 .SlideP {
-    display: none;
+  display: none;
 }
 
 .ImagesContainerP {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin-left: 50px;
 }
 
 .TextContainerP {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    flex: 3;
-    margin-right: 50px;
-    font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex: 3;
+  margin-right: 50px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .TittleP {
-    text-decoration: overline #00a2cf 5px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.3rem;
+  text-decoration: overline #00a2cf 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
 }
 
 .SlideImgP {
-    margin: 5px;
-    max-width: 400px;
-    max-height: 250px;
-    border: 5px solid #00a2cf;
-    border-top: none;
-    border-left: none;
-    cursor: pointer;
+  margin: 5px;
+  max-width: 400px;
+  max-height: 250px;
+  border: 5px solid #00a2cf;
+  border-top: none;
+  border-left: none;
+  cursor: pointer;
 }
 
 .PrevP,
 .NextP {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 .PrevP {
-    left: 0;
+  left: 0;
 }
 
 .NextP {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .PrevP:hover,
 .NextP:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 .TextP {
-    margin-top: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: justify;
-    max-width: 300px;
-    min-width: 100px;
-    font-size: 1.3rem;
+  margin-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: justify;
+  max-width: 300px;
+  min-width: 100px;
+  font-size: 1.3rem;
 }
 
 /* .Text {
@@ -113,146 +113,142 @@
 } */
 
 .DotContainerP {
-    text-align: center;
-    margin: 20px 0px;
-    padding-bottom: 20px;
+  text-align: center;
+  margin: 20px 0px;
+  padding-bottom: 20px;
 }
 
 .DotP {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active,
 .DotP:hover {
-    background-color: #717171;
+  background-color: #717171;
 }
 
 .Fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes Fade {
-    from {
-        opacity: .4
-    }
+  from {
+    opacity: 0.4;
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 300px) {
-
-    .PrevP,
-    .NextP,
-    .TextP {
-        font-size: 11px
-    }
+  .PrevP,
+  .NextP,
+  .TextP {
+    font-size: 11px;
+  }
 }
 
 .TecnologiesP {
-    padding-top: 20px;
-    align-items: flex-start;
-    flex: 1;
-    margin-top: 20px;
-    margin-bottom: 15px;
+  padding-top: 20px;
+  align-items: flex-start;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .IconP {
-    font-size: 25px;
-    color: #00a2cf;
-    margin: 5px;
+  font-size: 25px;
+  color: #00a2cf;
+  margin: 5px;
 }
 
 .ButtonsP {
-    flex: 1;
-    padding-top: 20px;
+  flex: 1;
+  padding-top: 20px;
 }
 
 .ButtonCodeP {
-    width: 140px;
-    height: 45px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    padding: 8px 10px 8px 10px;
-    margin: 10px;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 8px 10px 8px 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .ButtonCodeP:hover {
-    background-color: #00a2cf;
-    box-shadow: 0px 15px 20px rgba(102, 232, 255, 0.479);
-    color: #fff;
+  background-color: #00a2cf;
+  box-shadow: 0px 15px 20px rgba(102, 232, 255, 0.479);
+  color: #fff;
 }
 
 @media screen and (max-width: 850px) {
+  .SlideP {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .SlideP {
-        flex-direction: column;
-        align-items: center;
-    }
+  .SlideImgP {
+    flex: 1;
+    margin-left: 5%;
+  }
 
-    .SlideImgP {
-        flex: 1;
-        margin-left: 5%;
-    }
+  .TextContainerP {
+    margin-right: 0px;
+  }
 
-    .TextContainerP {
-        margin-right: 0px;
-    }
+  .TittleP {
+    margin-top: 30px;
+  }
 
-    .TittleP {
-        margin-top: 30px;
-    }
+  .TextP {
+    width: 100%;
+    max-width: 100%;
+    min-width: none;
+    padding: 0px 10%;
+  }
 
-    .TextP {
-        width: 100%;
-        max-width: 100%;
-        min-width: none;
-        padding: 0px 10%;
-    }
+  .ImagesContainerP {
+    margin-left: 0px;
+    flex-direction: row;
+  }
 
-    .ImagesContainerP {
-        margin-left: 0px;
-        flex-direction: row;
-    }
-
-    .DotContainerP{
-        padding-top: 20px;
-        padding-bottom: 0px;
-    }
+  .DotContainerP {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
 }
 
-
 @media screen and (max-width: 750px) {
+  .SlideP {
+    flex-direction: column;
+  }
 
-    .SlideP {
-        flex-direction: column;
-    }
-
-    .ImagesContainerP {
-        margin-left: 0px;
-        flex-direction: column;
-        max-width: 98%;
-    }
+  .ImagesContainerP {
+    margin-left: 0px;
+    flex-direction: column;
+    max-width: 98%;
+  }
 }

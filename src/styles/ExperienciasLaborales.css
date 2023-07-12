@@ -1,13 +1,12 @@
-.Proyectos {
+.ExperienciasLaborales {
   margin: 20px 0px;
-  /* background-color: rgb(211, 211, 211); */
+  background-color: rgb(211, 211, 211);
   min-height: 20rem;
   text-align: center;
   padding: 0 0.5rem;
 }
 
-.ProyectosTittle {
-  padding-top: 30px;
+.ExperienciasLaboralesTittle {
   color: #00a2cf;
   font-size: 40px;
   font-family: "Righteous";
@@ -18,53 +17,53 @@
   box-sizing: border-box;
 }
 
-.SlidesContainer {
-  /* max-width: 100%; */
+.SlidesContainerExp {
   max-width: 1000px;
   position: relative;
   margin: auto;
   padding-top: 15px;
+  margin-top: 20px;
 }
 
-.Slide {
+.SlideExp {
   display: none;
 }
 
-.ImagesContainer {
+.ImagesContainerExp {
   display: flex;
   flex-direction: column;
   flex: 2;
   margin-left: 50px;
 }
 
-.TextContainer {
+.TextContainerExp {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   flex: 3;
   margin-right: 50px;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.3rem;
 }
 
-.Tittle {
+.TittleExp {
   text-decoration: overline #00a2cf 5px;
-  font-size: 1.3rem;
   font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
 }
 
-.SlideImg {
+.SlideImgExp {
   margin: 5px;
-  max-width: 350px;
-  max-height: 200px;
-  border: 7px solid #00a2cf;
-  border-left: none;
+  max-width: 400px;
+  max-height: 250px;
+  border: 5px solid #00a2cf;
   border-top: none;
+  border-left: none;
   cursor: pointer;
 }
 
-.Prev,
-.Next {
+.PrevExp,
+.NextExp {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -79,28 +78,30 @@
   user-select: none;
 }
 
-.Prev {
+.PrevExp {
   left: 0;
 }
 
-.Next {
+.NextExp {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.Prev:hover,
-.Next:hover {
+.PrevExp:hover,
+.NextExp:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
-.Text {
+.TextExp {
   margin-top: 20px;
-  font-family: "Kanit", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: justify;
   max-width: 300px;
   min-width: 100px;
+  font-size: 1.3rem;
 }
+
 /* .Text {
     color: #f2f2f2;
     font-size: 15px;
@@ -111,13 +112,13 @@
     text-align: center;
 } */
 
-.DotContainer {
+.DotContainerExp {
   text-align: center;
   margin: 20px 0px;
   padding-bottom: 20px;
 }
 
-.Dot {
+.DotExp {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -129,7 +130,7 @@
 }
 
 .active,
-.Dot:hover {
+.DotExp:hover {
   background-color: #717171;
 }
 
@@ -149,33 +150,33 @@
 }
 
 @media only screen and (max-width: 300px) {
-  .Prev,
-  .Next,
-  .Text {
+  .PrevExp,
+  .NextExp,
+  .TextExp {
     font-size: 11px;
   }
 }
 
-.Tecnologies {
-  padding-top: 35px;
+.TecnologiesExp {
+  padding-top: 20px;
   align-items: flex-start;
   flex: 1;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-.Icon {
+.IconExp {
   font-size: 25px;
   color: #00a2cf;
   margin: 5px;
 }
 
-.Buttons {
+.ButtonsExp {
   flex: 1;
   padding-top: 20px;
 }
 
-.ButtonCode {
+.ButtonCodeExp {
   width: 140px;
   height: 45px;
   font-family: "Roboto", sans-serif;
@@ -197,54 +198,57 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-.ButtonCode:hover {
+.ButtonCodeExp:hover {
   background-color: #00a2cf;
   box-shadow: 0px 15px 20px rgba(102, 232, 255, 0.479);
   color: #fff;
 }
 
 @media screen and (max-width: 850px) {
-  .Slide {
+  .SlideExp {
     flex-direction: column;
+    align-items: center;
   }
 
-  .SlideImg {
+  .SlideImgExp {
     flex: 1;
     margin-left: 5%;
   }
 
-  .TextContainer {
+  .TextContainerExp {
     margin-right: 0px;
   }
 
-  .Tittle {
+  .TittleExp {
     margin-top: 30px;
   }
 
-  .Text {
+  .TextExp {
     width: 100%;
     max-width: 100%;
     min-width: none;
     padding: 0px 10%;
   }
 
-  .ImagesContainer {
+  .ImagesContainerExp {
     margin-left: 0px;
     flex-direction: row;
   }
 
-  .DotContainer {
+  .DotContainerExp {
     padding-top: 20px;
+    padding-bottom: 0px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .Slide {
+  .SlideExp {
     flex-direction: column;
   }
 
-  .ImagesContainer {
+  .ImagesContainerExp {
     margin-left: 0px;
     flex-direction: column;
+    max-width: 98%;
   }
 }
