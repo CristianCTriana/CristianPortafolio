@@ -78,7 +78,7 @@ let slideIndex = 1;
             </div>
             <div className='ButtonsP'>
               <a className='ButtonCodeP' href='https://github.com/CristianaCTriana/Copywrite-Challenge' target="_blank" rel="noopener noreferrer"><FaHashtag style={{marginRight: '8px'}}/>Código</a>
-              <a className='ButtonCodeP' href='https://challenge-copywrite-camilot.herokuapp.com' target="_blank" rel="noopener noreferrer"><FaEye style={{marginRight: '8px'}}/>Ver</a>
+              <a className='ButtonCodeP' data-tip="no disponible"><FaEye style={{marginRight: '8px'}}/>Ver</a>
               <ReactTooltip effect='solid' />
             </div>
           </div>
